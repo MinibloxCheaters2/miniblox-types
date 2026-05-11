@@ -2,9 +2,17 @@
 	"name": "@wq2/miniblox-types",
 	"version": "0.0.1",
 	"description": "Type declarations for Miniblox objects and auto complete, originally from Vape Rewrite & Spherical.",
+	"readme": "ReadME.md",
+	"repository": {
+		"url": "git+https://github.com/MinibloxCheaters2/miniblox-types.git"
+	},
 	"files": [
-		"src"
+		"src",
+		"ReadME.md"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"types": "./src/index.d.ts",
 	"type": "module",
 	"devDependencies": {
