@@ -1,6 +1,5 @@
 import type { Box3, Vector3 } from "three";
 import type { RayTraceResult } from "../controller";
-import { Potion } from "../effects/potion";
 import type { InventoryPlayer } from "../undefined";
 import type World from "../world";
 
@@ -56,34 +55,6 @@ export type Recipe =
 
 // Recipe registry
 export declare type RecipeRegistry = Record<number, Recipe[]>;
-
-// Potion registry
-export declare class Potions {
-	getId(): number;
-	static readonly jump: Potion;
-	static readonly blindness: Potion;
-	static readonly speed: Potion;
-	static readonly slowness: Potion;
-	static readonly haste: Potion;
-	static readonly miningFatigue: Potion;
-	static readonly strength: Potion;
-	static readonly instantHealth: Potion;
-	static readonly instantDamage: Potion;
-	static readonly jumpBoost: Potion;
-	static readonly nausea: Potion;
-	static readonly regeneration: Potion;
-	static readonly resistance: Potion;
-	static readonly fireResistance: Potion;
-	static readonly waterBreathing: Potion;
-	static readonly invisibility: Potion;
-	static readonly nightVision: Potion;
-	static readonly weakness: Potion;
-	static readonly poison: Potion;
-	static readonly wither: Potion;
-	static readonly healthBoost: Potion;
-	static readonly absorption: Potion;
-	static readonly saturation: Potion;
-}
 
 export interface Level {
 	owner: RankLevel;

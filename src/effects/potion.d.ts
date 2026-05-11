@@ -2,29 +2,29 @@ import type { Entity } from "../entities";
 
 // biome-ignore lint/complexity/noStaticOnlyClass: Miniblox's code, can't fix ts.
 export declare class Potions {
-	static moveSpeed: Potion;
-	static moveSlowdown: Potion;
-	static digSpeed: Potion;
-	static digSlowdown: Potion;
-	static damageBoost: Potion;
-	static heal: Potion;
-	static harm: Potion;
-	static jump: Potion;
-	static confusion: Potion;
-	static regeneration: Potion;
-	static resistance: Potion;
-	static fireResistance: Potion;
-	static waterBreathing: Potion;
-	static invisibility: Potion;
-	static blindness: Potion;
-	static nightVision: Potion;
-	static hunger: Potion;
-	static weakness: Potion;
-	static poison: Potion;
-	static wither: Potion;
-	static healthBoost: Potion;
-	static absorption: Potion;
-	static saturation: Potion;
+	static readonly moveSpeed: Potion;
+	static readonly moveSlowdown: Potion;
+	static readonly digSpeed: Potion;
+	static readonly digSlowdown: Potion;
+	static readonly damageBoost: Potion;
+	static readonly heal: Potion;
+	static readonly harm: Potion;
+	static readonly jump: Potion;
+	static readonly confusion: Potion;
+	static readonly regeneration: Potion;
+	static readonly resistance: Potion;
+	static readonly fireResistance: Potion;
+	static readonly waterBreathing: Potion;
+	static readonly invisibility: Potion;
+	static readonly blindness: Potion;
+	static readonly nightVision: Potion;
+	static readonly hunger: Potion;
+	static readonly weakness: Potion;
+	static readonly poison: Potion;
+	static readonly wither: Potion;
+	static readonly healthBoost: Potion;
+	static readonly absorption: Potion;
+	static readonly saturation: Potion;
 }
 
 export declare class Potion {

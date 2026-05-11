@@ -1,12 +1,7 @@
 import type { Box3, Vector3, Vector3Like } from "three/src/Three.Core";
 import type { Entity } from "../entities";
 import type { EnumFacing } from "../math/facing";
-
-export class PBBlockPos {
-	x: number;
-	y: number;
-	z: number;
-}
+import type { PBBlockPos } from "../packets";
 
 export class BlockPos {
 	toProto(): PBBlockPos;
