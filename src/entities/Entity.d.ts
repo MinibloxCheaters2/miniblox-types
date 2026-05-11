@@ -6,6 +6,7 @@ import type { Block } from "../world/blocks";
 import type { DamageSource } from "../world/damageSource";
 import type { RenderPlayer } from "../render";
 import type { DataWatcher, Profile } from "../undefined";
+import type { BlockState } from "../world";
 
 declare class Entity {
 	static nextEntityID: number;
@@ -193,13 +194,13 @@ declare class Entity {
 	/** gets the **BLOCK** position of the player. */
 	getPosition(): BlockPos;
 	getExplosionResistance(
-		u: unknown,
-		h: unknown,
-		p: unknown,
-		g: unknown,
-	): unknown;
+		explosion: Explosion,
+		world: World,
+		pos: BlockPos,
+		blockState: BlockState,
+	): float;
 	verifyExplosion(
-		explosion: unknown,
+		explosion: Explosion,
 		worldObj: World,
 		x: number,
 		y: number,
@@ -215,7 +216,7 @@ declare class Entity {
 	getCollisionBorderSize(): number;
 	readFromNBT(u: unknown): void;
 	isOverworld(): boolean;
-	interactFirst(u: unknown): boolean;
+	interactFirst(player: Entity): boolean;
 	applyEnchantments(u: unknown, h: unknown): void;
 	isRiding(): boolean;
 	getYOffset(): number;

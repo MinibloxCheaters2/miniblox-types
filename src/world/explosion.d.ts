@@ -1,3 +1,5 @@
+import type { Vector3 } from "three";
+
 declare class Explosion {
 	isFlaming: boolean;
 	isSmoking: boolean;
@@ -10,7 +12,7 @@ declare class Explosion {
 	exploder: Entity;
 	explosionSize: number;
 	affectedBlockPositions: BlockPos[];
-	playerKnockbackMap: Map<Entity, Vector3$1>;
+	playerKnockbackMap: Map<Entity, Vector3>;
 	constructor(
 		world: World,
 		exploder: Entity,
@@ -24,7 +26,7 @@ declare class Explosion {
 	);
 	doExplosionA(): void;
 	doExplosionB(bl: boolean): void;
-	getPlayerKnockbackMap(): Map<Entity, Vector3$1>;
+	getPlayerKnockbackMap(): Map<Entity, Vector3>;
 	getExplosivePlacedBy(): Entity | null;
 	/**
 	 * Clears `affectedBlockPositions` by setting its length field to `0`.
