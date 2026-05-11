@@ -1,10 +1,11 @@
 import type { Vector3 } from "three";
-import type { Entity } from "./Entity";
 import type { ItemStack } from "../undefined";
 import type World from "../world";
+import type { Entity } from "./Entity";
+import type { EntityName } from "./EntityArrow";
 
 declare class EntityItem extends Entity {
-	identifier: any; // EntityName.ITEM
+	identifier: EntityName.ITEM; // EntityName.ITEM
 	age: number;
 	delayBeforeCanPickup: number;
 	health: number;

@@ -1,8 +1,16 @@
 import type { Vector3 } from "three";
-import type { Entity } from "./Entity";
+import type { Potion } from "../effects";
 import type { EnumCreatureAttribute } from "../enums";
-import type { AttributeMap, CombatTracker, Inventory, ItemStack, PotionEffect } from "../undefined";
+import type {
+	AttributeMap,
+	CombatTracker,
+	Inventory,
+	ItemStack,
+	PotionEffect,
+} from "../undefined";
 import type World from "../world";
+import type { Entity } from "./Entity";
+import type { EntityPlayer } from "./EntityPlayer";
 
 declare class EntityLivingBase extends Entity {
 	activePotionsMap: Map<number, PotionEffect>;
@@ -19,7 +27,7 @@ declare class EntityLivingBase extends Entity {
 	hurtResistantTime: number;
 	maxHurtResistantTime: number;
 	attackedAtYaw: number;
-	attackingPlayer: any | null; // EntityPlayer
+	attackingPlayer: EntityPlayer | null; // EntityPlayer
 	recentlyHit: number;
 	combatTracker: CombatTracker;
 	landMovementFactor: number;
@@ -116,7 +124,7 @@ declare class EntityLivingBase extends Entity {
 	resetPotionEffectMetadata(): void;
 	clearActivePotions(): void;
 	getActivePotionEffects(): PotionEffect[];
-	isPotionActive(pot: any): boolean; // Potion
+	isPotionActive(pot: Potion): boolean; // Potion
 	getActivePotionEffect(h: unknown): unknown;
 	addPotionEffect(h: unknown): void;
 	isPotionApplicable(h: unknown): boolean;

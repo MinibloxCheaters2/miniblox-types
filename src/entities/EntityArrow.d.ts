@@ -1,6 +1,6 @@
 import type { Vector3 } from "three";
-import type { Entity } from "./Entity";
 import type World from "../world";
+import type { Entity } from "./Entity";
 
 declare enum EntityName {
 	UNDEFINED,

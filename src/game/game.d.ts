@@ -2,9 +2,9 @@ import { Vector3 } from "three";
 import { Chat } from "../chat";
 import { PlayerController } from "../controller";
 import { ClientEntityPlayer } from "../entities";
-import { GameScene } from "./gameScene";
 import { ServerInfo } from "../network/serverInfo";
 import { ClientWorld } from "../world";
+import { GameScene } from "./gameScene";
 
 export enum GameState {
 	TITLE_SCREEN = 0,

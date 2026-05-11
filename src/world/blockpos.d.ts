@@ -1,4 +1,4 @@
-import type { Box3, Vector3, Vector3Like } from "three/src/Three.Core";
+import type { Box3, Vector3 } from "three";
 import type { Entity } from "../entities";
 import type { EnumFacing } from "../math/facing";
 import type { PBBlockPos } from "../packets";
@@ -14,7 +14,7 @@ export class BlockPos {
 	getY(): number;
 	getZ(): number;
 	static fromVector(vec: Vector3): BlockPos;
-	static fromJSON(json: Vector3Like): BlockPos;
+	static fromJSON(json: { x: number; y: number; z: number }): BlockPos;
 	static fromProto(proto: PBBlockPos): BlockPos;
 	static fromString(str: string): BlockPos;
 	toVec3(): Vector3;

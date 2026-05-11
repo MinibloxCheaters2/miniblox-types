@@ -1,5 +1,4 @@
 import type { Vector3 } from "three";
-import type { BlockPos } from "../world/blockpos";
 import type { Entity, EntityLivingBase, EntityPlayer } from "../entities";
 import type { ItemStack } from "../items";
 import type { EnumFacing } from "../math/facing";
@@ -8,6 +7,7 @@ import type { RayTraceResult } from "../rayTraceResult";
 import type { SlotActionType } from "../slot";
 import type World from "../world";
 import type { BlockState } from "../world";
+import type { BlockPos } from "../world/blockpos";
 
 export declare class PlayerControllerMP {
 	lastSentSlot: number;

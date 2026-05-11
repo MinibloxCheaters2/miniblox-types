@@ -1,13 +1,25 @@
 import type { Vector3 } from "three";
-import type { EntityLivingBase } from "./EntityLivingBase";
 import type { BlockPos } from "../blockpos";
 import type { Block, BlockChest } from "../blocks";
 import type { Container, ContainerPlayer } from "../container";
-import type { EnumFacing } from "../math/facing";
 import type { Abilities, GameMode } from "../gamemode";
-import type { InventoryPlayer, InventoryEnderChest, ItemStack, EffectsManager, FoodStats, GameProfile, Profile, TileEntitySign, CommandBlockLogic } from "../undefined";
+import type { EnumFacing } from "../math/facing";
+import type { SPacketPlayerInput } from "../packets";
 import type { Team } from "../team";
+import type {
+	CommandBlockLogic,
+	EffectsManager,
+	FoodStats,
+	GameProfile,
+	InventoryEnderChest,
+	InventoryPlayer,
+	ItemStack,
+	Profile,
+	TileEntitySign,
+} from "../undefined";
 import type World from "../world";
+import type { Entity } from "./Entity";
+import type { EntityLivingBase } from "./EntityLivingBase";
 
 declare interface IInterface {
 	getGuiID(): string;
@@ -75,7 +87,7 @@ declare class EntityPlayer extends EntityLivingBase {
 	getJumpMovementFactor(): number;
 	onPlayerUpdate(): void;
 	checkCollisionWithEntities(): void;
-	applyInput(input: any, _unused?: boolean): void; // SPacketPlayerInput
+	applyInput(input: SPacketPlayerInput, _unused?: boolean): void; // SPacketPlayerInput
 	addStat(h: unknown, p: unknown): void;
 	addMovementStat(h: unknown, p: unknown, g: unknown): void;
 	updateItemInUse(): void;
@@ -100,7 +112,7 @@ declare class EntityPlayer extends EntityLivingBase {
 	openEditCommandBlock(h: CommandBlockLogic): void;
 	dropItemForPlayer(h: unknown, p?: boolean): unknown;
 	dropItem(h: unknown, p: unknown, g: unknown, y?: boolean): unknown;
-	joinEntityItemWithWorld(e: any): void; // Entity
+	joinEntityItemWithWorld(e: Entity): void; // Entity
 	canHarvestBlock(h: Block): boolean;
 	getToolDigEfficiency(h: unknown): unknown;
 	addExhaustion(h: unknown): void;

@@ -1,4 +1,5 @@
 import type { Group, Mesh, Object3D } from "three";
+import type { Item } from "../items";
 import type { RenderEntity } from "./RenderEntity";
 
 declare class RenderLivingEntity extends RenderEntity {
@@ -23,8 +24,8 @@ declare class RenderLivingEntity extends RenderEntity {
 	body: Group;
 	armorMesh: Mesh;
 	meshes: Mesh[];
-	item: any;
-	lastActiveItem: any;
+	item: Item;
+	lastActiveItem: Item;
 	handMesh: Mesh;
 	handTesr: any;
 	prevCustomName: string;

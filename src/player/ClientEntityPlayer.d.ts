@@ -1,8 +1,10 @@
 import type { Box3Helper, Vector3 } from "three";
 import type { BlockPos } from "../blockpos";
 import type { Block } from "../blocks";
+import type { Entity } from "../entities";
 import type { Game } from "../game";
-import type { Inventory } from "../undefined";
+import type { CPacketRespawn } from "../packets";
+import type { CommandBlockLogic, Inventory, Profile } from "../undefined";
 import type { PlayerMovement } from "./PlayerMovement";
 
 declare enum Perspective {
@@ -38,11 +40,11 @@ declare class ClientEntityPlayer extends PlayerMovement {
 	positionUpdateTicks: number;
 	lastjump: number;
 	constructor();
-	init(socketId: string, p: any): void; // Profile
+	init(socketId: string, p: Profile): void;
 	checkInventoryChange(h?: boolean): void;
 	resetPositionToBB(h?: boolean): void;
 	addSelectBox(): void;
-	respawn(packet?: any): void; // CPacketRespawn
+	respawn(packet?: CPacketRespawn): void;
 	sendRespawnPacket(): void;
 	renderCameraFOV(): void;
 	renderCamera(dt: number): void;
@@ -56,10 +58,10 @@ declare class ClientEntityPlayer extends PlayerMovement {
 	updateClient(dt: number): void;
 	updateSoundOrientation(): void;
 	resetInventory(): void;
-	onEnchantmentCritical(e: any): void; // Entity
+	onEnchantmentCritical(e: Entity): void; // Entity
 	setXPStats(xp: number, total: number, level: number): void;
 	openShop(): void;
-	getClientModel(): any; // CommandBlockLogic
+	getClientModel(): CommandBlockLogic;
 }
 
 export { ClientEntityPlayer, Perspective };
