@@ -1,6 +1,6 @@
 {
-	"name": "miniblox-typings",
-	"version": "0.6.7",
+	"name": "@wq2/miniblox-typings",
+	"version": "0.0.1",
 	"description": "Typings around Miniblox objects for auto complete, originally from Vape Rewrite & Spherical.",
 	"files": [
 		"src"
