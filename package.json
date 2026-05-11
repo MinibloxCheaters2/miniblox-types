@@ -2,9 +2,13 @@
 	"name": "miniblox-typings",
 	"version": "0.6.7",
 	"description": "Typings around Miniblox objects for auto complete, originally from Vape Rewrite & Spherical.",
-	"module": "index.ts",
+	"files": [
+		"src"
+	],
+	"types": "./src/index.d.ts",
 	"type": "module",
 	"devDependencies": {
-		"@types/three": "0.158.3"
+		"@types/three": "0.158.3",
+		"typescript": "^6.0.3"
 	}
 }

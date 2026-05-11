@@ -1,7 +1,7 @@
-import type { EntityPlayer } from "../entity";
+import type { EntityPlayer } from "../entities";
 import type { InventoryBasic, InventoryPlayer } from "../inventory";
 import type { ItemStack } from "../items";
-import type Slot from "../slot";
+import type { Slot } from "../slot";
 import type { ICrafting } from "../undefined";
 
 export class Container {

@@ -1,4 +1,4 @@
-import type { EntityPlayer } from "../entity";
+import type { EntityPlayer } from "../entities";
 import type { InventoryPlayer } from "../inventory";
 import type { ItemStack } from "../items";
 import { Container } from "./Container";
