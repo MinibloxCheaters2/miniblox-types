@@ -3,8 +3,7 @@ import type { Block } from "../blocks/Block";
 import type { EnumFacing } from "../math/facing";
 import type { RenderPlayer } from "../render";
 import type { DataWatcher, Profile } from "../undefined";
-import type { World } from "../world";
-import type { BlockState } from "../world";
+import type { BlockState, World } from "../world";
 import type { BlockPos } from "../world/blockpos";
 import type { DamageSource } from "../world/damageSource";
 

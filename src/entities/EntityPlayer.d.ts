@@ -3,6 +3,8 @@ import type { Block, BlockChest } from "../blocks";
 import type { Container, ContainerPlayer } from "../container";
 import type { Abilities, GameMode } from "../game/gamemode";
 import type { Team } from "../game/team";
+import type { InventoryPlayer } from "../inventory";
+import type { ItemStack } from "../items";
 import type { EnumFacing } from "../math/facing";
 import type { SPacketPlayerInput } from "../packets";
 import type {
@@ -14,8 +16,6 @@ import type {
 	Profile,
 	TileEntitySign,
 } from "../undefined";
-import type { InventoryPlayer } from "../inventory";
-import type { ItemStack } from "../items";
 import type { World } from "../world";
 import type { BlockPos } from "../world/blockpos";
 import type { Entity } from "./Entity";

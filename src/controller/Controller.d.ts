@@ -4,8 +4,7 @@ import type { ItemStack } from "../items";
 import type { EnumFacing } from "../math/facing";
 import type { PBItemStack } from "../packets";
 import type { SlotActionType } from "../slot";
-import type { World } from "../world";
-import type { BlockState } from "../world";
+import type { BlockState, World } from "../world";
 import type { BlockPos } from "../world/blockpos";
 import type { RayTraceResult } from "../world/rayTraceResult";
 

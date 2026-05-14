@@ -1,13 +1,13 @@
 import type { Vector3 } from "three";
 import type { Potion } from "../effects";
 import type { EnumCreatureAttribute } from "../enums";
+import type { ItemStack } from "../items";
 import type {
 	AttributeMap,
 	CombatTracker,
 	Inventory,
 	PotionEffect,
 } from "../undefined";
-import type { ItemStack } from "../items";
 import type { World } from "../world";
 import type { Entity } from "./Entity";
 import type { EntityPlayer } from "./EntityPlayer";
