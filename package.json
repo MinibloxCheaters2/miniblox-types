@@ -1,22 +1,22 @@
 {
 	"name": "@wq2/miniblox-sdk",
-	"version": "0.0.4",
+	"version": "0.0.1",
 	"description": "SDK for Miniblox (mostly typings), originally from Vape Rewrite & Spherical.",
 	"readme": "ReadME.md",
 	"repository": {
 		"url": "git+https://github.com/MinibloxCheaters2/miniblox-types.git"
 	},
 	"files": [
-		"src",
+		"dist",
 		"ReadME.md"
 	],
 	"publishConfig": {
 		"access": "public"
 	},
 	"exports": {
-		".": "./dist/index.js"
+		".": "./dist/index.mjs"
 	},
-	"types": "./src/index.ts",
+	"types": "./dist/index.d.mts",
 	"type": "module",
 	"dependencies": {
 		"@types/three": "0.158.3"
