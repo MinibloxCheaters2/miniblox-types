@@ -1,4 +1,4 @@
-import type { Entity, EntityLivingBase } from "../entities";
+import type { Entity, EntityLivingBase } from "../entities/index";
 import type { EnumCreatureAttribute } from "../enums";
 import type { ItemStack } from "../items";
 import type { DamageSource } from "../world/damageSource";

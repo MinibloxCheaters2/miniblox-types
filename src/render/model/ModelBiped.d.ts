@@ -1,18 +1,18 @@
-import { Group, Object3D, Mesh } from "three";
-import { Model, BoxData } from "./Model";
+import type { Mesh } from "three";
+import type { BoxData, Model } from "./Model";
 
 export declare class ModelBiped extends Model {
 	parts: Record<string, BoxData>;
-	materialCache: Map<string, any>;
+	materialCache: Map<string, unknown>;
 	skinLoaded: Promise<void>;
 	skin: string;
 
-	constructor(skeleton: any, skinName?: string);
-	init(skeleton: any, skinName: string): Promise<void>;
+	constructor(skeleton: unknown, skinName?: string);
+	init(skeleton: unknown, skinName: string): Promise<void>;
 
 	generateGeometry(
 		h: string,
-		p: any,
+		p: unknown,
 		g: number[],
 		y: number[],
 		x: number[],
@@ -25,29 +25,29 @@ export declare class ModelBiped extends Model {
 
 	initArmorMesh(h: string): Mesh;
 
-	clearArmor(h: any): void;
+	clearArmor(h: unknown): void;
 
-	setArmor(h: any): void;
+	setArmor(h: unknown): void;
 
-	applyArmorMaterial(h: any, p: any, g: string): void;
+	applyArmorMaterial(h: unknown, p: unknown, g: string): void;
 
-	getMaterialKey(h: any, p: string): string;
+	getMaterialKey(h: unknown, p: string): string;
 
-	createColoredMaterial(h: any, p: string): any;
+	createColoredMaterial(h: unknown, p: string): unknown;
 
-	addHead(h: any): void;
+	addHead(h: unknown): void;
 
-	addTorso(h: any): void;
+	addTorso(h: unknown): void;
 
-	addArms(h: any): void;
+	addArms(h: unknown): void;
 
-	addLegs(h: any): void;
+	addLegs(h: unknown): void;
 
-	combineMeshes(h: any): void;
+	combineMeshes(h: unknown): void;
 
-	combineMeshes2(h: any): void;
+	combineMeshes2(h: unknown): void;
 
-	assembleBody(h: any): void;
+	assembleBody(h: unknown): void;
 
-	addBodyParts(h: any): void;
+	addBodyParts(h: unknown): void;
 }

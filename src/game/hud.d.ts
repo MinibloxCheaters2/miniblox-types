@@ -1,5 +1,5 @@
 import type { Group, Loader, Mesh, Texture, TextureLoader } from "three";
-import { Block } from "./blocks";
+import type { Block } from "../blocks/Block";
 
 export interface AnimationKeyframe {
 	duration: number;

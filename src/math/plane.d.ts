@@ -1,8 +1,8 @@
-import { EnumFacing } from "./facing";
+import type { EnumFacing } from "./facing";
 
 type directionStr = "horizontal" | "vertical";
 
-declare class Plane {
+export declare class Plane {
 	static HORIZONTAL: Plane;
 	static VERTICAL: Plane;
 

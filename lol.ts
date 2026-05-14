@@ -36,4 +36,6 @@ allPaths
 	.sort((a, b) => a.localeCompare(b))
 	.map((p) => p.replace(/\.d\.ts$/, ""))
 	.map((p) => `export * from "./${p}";`)
-	.forEach((line) => console.log(line));
+	.forEach((line) => {
+		console.log(line);
+	});

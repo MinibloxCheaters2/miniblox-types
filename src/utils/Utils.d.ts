@@ -1,7 +1,7 @@
 import type { Box3, Vector3 } from "three";
-import type { RayTraceResult } from "../controller";
-import type { InventoryPlayer } from "../undefined";
-import type World from "../world";
+import type { InventoryPlayer } from "../inventory";
+import type { World } from "../world";
+import type { RayTraceResult } from "../world/rayTraceResult";
 
 export declare function keyPressed(key: string): boolean;
 

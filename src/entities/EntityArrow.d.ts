@@ -1,8 +1,8 @@
 import type { Vector3 } from "three";
-import type World from "../world";
+import type { World } from "../world";
 import type { Entity } from "./Entity";
 
-declare enum EntityName {
+export declare enum EntityName {
 	UNDEFINED,
 	ITEM,
 	PLAYER,
@@ -30,7 +30,7 @@ declare enum EntityName {
 	GHOST,
 }
 
-declare class EntityArrow extends Entity {
+export declare class EntityArrow extends Entity {
 	type: "arrow";
 	identifier: EntityName;
 	shootingEntity: Entity;

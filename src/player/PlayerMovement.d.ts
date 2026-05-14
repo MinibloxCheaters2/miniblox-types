@@ -4,7 +4,7 @@ import type {
 	SPacketPlayerInput,
 } from "../packets";
 
-declare class PlayerMovement extends EntityPlayer {
+export declare class PlayerMovement extends EntityPlayer {
 	flyToggleTimer: number;
 	sprintToggleTimer: number;
 	sprintingTicksLeft: number;

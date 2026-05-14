@@ -1,9 +1,7 @@
 import type { Box3 } from "three";
-import type World from "../world";
-import type { BlockState } from "../world";
+import type { BlockState, World } from "../world";
 import type { BlockPos } from "../world/blockpos";
 import type { Material } from "../world/materials";
-import type { AxisAlignedBB } from "./aliases";
 
 export class Block {
 	name?: string;
@@ -24,7 +22,7 @@ export class Block {
 	isFullBlock(): boolean;
 	isOpaqueCube(): boolean;
 	isPassable(world: World, pos: BlockPos): boolean;
-	getCollisionBoundingBox(world: World, pos: BlockPos): AxisAlignedBB | null;
+	getCollisionBoundingBox(world: World, pos: BlockPos): Box3 | null;
 	isCollidable(): boolean;
 	canCollideCheck(state: BlockState, hitIfLiquid: boolean): boolean;
 	getMaterial(): Material;

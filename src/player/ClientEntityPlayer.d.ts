@@ -1,10 +1,10 @@
 import type { Box3Helper, Vector3 } from "three";
-import type { BlockPos } from "../blockpos";
 import type { Block } from "../blocks";
 import type { Entity } from "../entities";
 import type { Game } from "../game";
 import type { CPacketRespawn } from "../packets";
 import type { CommandBlockLogic, Inventory, Profile } from "../undefined";
+import type { BlockPos } from "../world/blockpos";
 import type { PlayerMovement } from "./PlayerMovement";
 
 declare enum Perspective {
@@ -13,7 +13,7 @@ declare enum Perspective {
 	THIRD_PERSON_FRONT,
 }
 
-declare class ClientEntityPlayer extends PlayerMovement {
+export declare class ClientEntityPlayer extends PlayerMovement {
 	perspective: Perspective;
 	deltaFov: number;
 	selectBox: Box3Helper;

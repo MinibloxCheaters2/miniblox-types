@@ -1,4 +1,6 @@
-# Minblox Typings
+# Minblox SDK
+
+Mostly typings but there's enums and stuff here and there (nowhere).
 
 ## License
 

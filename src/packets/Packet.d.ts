@@ -1,5 +1,5 @@
-import type { S2CPacket } from "./packetTypes";
-import type { SlotActionType } from "./slot";
+import type { S2CPacket } from "../network/packetTypes";
+import type { SlotActionType } from "../slot/SlotActionType";
 
 export class Message<T extends object> {
 	constructor(data?: T);

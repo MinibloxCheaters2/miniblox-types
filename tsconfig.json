@@ -5,7 +5,6 @@
 		"target": "ESNext",
 		"module": "Preserve",
 		"moduleDetection": "force",
-		"allowJs": true,
 		"rootDir": "src",
 		"declaration": true,
 		"composite": true,
@@ -15,7 +14,7 @@
 		"allowImportingTsExtensions": true,
 		"verbatimModuleSyntax": true,
 		"emitDeclarationOnly": true,
-		"outFile": "dist/index.ts",
+		"isolatedDeclarations": true,
 
 		// Best practices
 		"strict": true,

@@ -5,14 +5,14 @@ import type {
 	AttributeMap,
 	CombatTracker,
 	Inventory,
-	ItemStack,
 	PotionEffect,
 } from "../undefined";
-import type World from "../world";
+import type { ItemStack } from "../items";
+import type { World } from "../world";
 import type { Entity } from "./Entity";
 import type { EntityPlayer } from "./EntityPlayer";
 
-declare class EntityLivingBase extends Entity {
+export declare class EntityLivingBase extends Entity {
 	activePotionsMap: Map<number, PotionEffect>;
 	potionsNeedUpdate: boolean;
 	absorptionAmount: number;

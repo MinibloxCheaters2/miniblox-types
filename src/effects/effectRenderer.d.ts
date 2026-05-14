@@ -1,6 +1,6 @@
 import type { ClientWorld, World } from "../world";
 
-declare class EntityFX extends Entity {
+export declare class EntityFX extends Entity {
 	sprite: Sprite;
 	mesh_: Mesh;
 	particleTextureIndexX: number;
@@ -26,7 +26,7 @@ declare class EntityFX extends Entity {
 	);
 	multiplyVelocity(multiplier: number): this;
 	multipleParticleScaleBy(v: number): this;
-	setRBGColorF(h: number, p: number, g: number): void;
+	setRBGColorF(r: number, g: number, b: number): void;
 	getRedColorF(): this["particleRed"];
 	getGreenColorF(): this["particleGreen"];
 	getBlueColorF(): this["particleBlue"];
@@ -41,52 +41,52 @@ declare class EntityFX extends Entity {
 	nextTextureIndexX(): void;
 	canAttackWithItem(): boolean;
 }
-declare class EnumParticleTypes {
-	static PARTICLES: Map<number, EnumParticleTypes>;
-	static PARTICLE_NAMES: string[];
-	static EXPLOSION_NORMAL: EnumParticleTypes;
-	static EXPLOSION_LARGE: EnumParticleTypes;
-	static EXPLOSION_HUGE: EnumParticleTypes;
-	static FIREWORKS_SPARK: EnumParticleTypes;
-	static WATER_BUBBLE: EnumParticleTypes;
-	static WATER_SPLASH: EnumParticleTypes;
-	static WATER_WAKE: EnumParticleTypes;
-	static SUSPENDED: EnumParticleTypes;
-	static SUSPENDED_DEPTH: EnumParticleTypes;
-	static CRIT: EnumParticleTypes;
-	static CRIT_MAGIC: EnumParticleTypes;
-	static SMOKE_NORMAL: EnumParticleTypes;
-	static SMOKE_LARGE: EnumParticleTypes;
-	static SPELL: EnumParticleTypes;
-	static SPELL_INSTANT: EnumParticleTypes;
-	static SPELL_MOB: EnumParticleTypes;
-	static SPELL_MOB_AMBIENT: EnumParticleTypes;
-	static SPELL_WITCH: EnumParticleTypes;
-	static DRIP_WATER: EnumParticleTypes;
-	static DRIP_LAVA: EnumParticleTypes;
-	static VILLAGER_ANGRY: EnumParticleTypes;
-	static VILLAGER_HAPPY: EnumParticleTypes;
-	static TOWN_AURA: EnumParticleTypes;
-	static NOTE: EnumParticleTypes;
-	static PORTAL: EnumParticleTypes;
-	static ENCHANTMENT_TABLE: EnumParticleTypes;
-	static FLAME: EnumParticleTypes;
-	static LAVA: EnumParticleTypes;
-	static FOOTSTEP: EnumParticleTypes;
-	static CLOUD: EnumParticleTypes;
-	static REDSTONE: EnumParticleTypes;
-	static SNOWBALL: EnumParticleTypes;
-	static SNOW_SHOVEL: EnumParticleTypes;
-	static SLIME: EnumParticleTypes;
-	static HEART: EnumParticleTypes;
-	static BARRIER: EnumParticleTypes;
-	static ITEM_CRACK: EnumParticleTypes;
-	static BLOCK_CRACK: EnumParticleTypes;
-	static BLOCK_DUST: EnumParticleTypes;
-	static WATER_DROP: EnumParticleTypes;
-	static ITEM_TAKE: EnumParticleTypes;
-	static MOB_APPEARANCE: EnumParticleTypes;
-	static COLOR: EnumParticleTypes;
+export declare class EnumParticleTypes {
+	static readonly PARTICLES: Map<number, EnumParticleTypes>;
+	static readonly PARTICLE_NAMES: string[];
+	static readonly EXPLOSION_NORMAL: EnumParticleTypes;
+	static readonly EXPLOSION_LARGE: EnumParticleTypes;
+	static readonly EXPLOSION_HUGE: EnumParticleTypes;
+	static readonly FIREWORKS_SPARK: EnumParticleTypes;
+	static readonly WATER_BUBBLE: EnumParticleTypes;
+	static readonly WATER_SPLASH: EnumParticleTypes;
+	static readonly WATER_WAKE: EnumParticleTypes;
+	static readonly SUSPENDED: EnumParticleTypes;
+	static readonly SUSPENDED_DEPTH: EnumParticleTypes;
+	static readonly CRIT: EnumParticleTypes;
+	static readonly CRIT_MAGIC: EnumParticleTypes;
+	static readonly SMOKE_NORMAL: EnumParticleTypes;
+	static readonly SMOKE_LARGE: EnumParticleTypes;
+	static readonly SPELL: EnumParticleTypes;
+	static readonly SPELL_INSTANT: EnumParticleTypes;
+	static readonly SPELL_MOB: EnumParticleTypes;
+	static readonly SPELL_MOB_AMBIENT: EnumParticleTypes;
+	static readonly SPELL_WITCH: EnumParticleTypes;
+	static readonly DRIP_WATER: EnumParticleTypes;
+	static readonly DRIP_LAVA: EnumParticleTypes;
+	static readonly VILLAGER_ANGRY: EnumParticleTypes;
+	static readonly VILLAGER_HAPPY: EnumParticleTypes;
+	static readonly TOWN_AURA: EnumParticleTypes;
+	static readonly NOTE: EnumParticleTypes;
+	static readonly PORTAL: EnumParticleTypes;
+	static readonly ENCHANTMENT_TABLE: EnumParticleTypes;
+	static readonly FLAME: EnumParticleTypes;
+	static readonly LAVA: EnumParticleTypes;
+	static readonly FOOTSTEP: EnumParticleTypes;
+	static readonly CLOUD: EnumParticleTypes;
+	static readonly REDSTONE: EnumParticleTypes;
+	static readonly SNOWBALL: EnumParticleTypes;
+	static readonly SNOW_SHOVEL: EnumParticleTypes;
+	static readonly SLIME: EnumParticleTypes;
+	static readonly HEART: EnumParticleTypes;
+	static readonly BARRIER: EnumParticleTypes;
+	static readonly ITEM_CRACK: EnumParticleTypes;
+	static readonly BLOCK_CRACK: EnumParticleTypes;
+	static readonly BLOCK_DUST: EnumParticleTypes;
+	static readonly WATER_DROP: EnumParticleTypes;
+	static readonly ITEM_TAKE: EnumParticleTypes;
+	static readonly MOB_APPEARANCE: EnumParticleTypes;
+	static readonly COLOR: EnumParticleTypes;
 	particleName: string;
 	particleID: number;
 	shouldIgnoreRange: boolean;
@@ -106,7 +106,7 @@ declare class EnumParticleTypes {
 	static getParticleFromId(id: number): EnumParticleTypes | undefined;
 }
 
-declare class EffectRenderer {
+export declare class EffectRenderer {
 	scene: GameScene;
 	isGuiPlayerRenderer: boolean;
 	fxLayers: EntityFX[][][];

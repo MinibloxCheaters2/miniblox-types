@@ -1,7 +1,7 @@
 import type { Mesh } from "three";
 import type { RenderLivingEntity } from "./RenderLivingEntity";
 
-declare class RenderPlayer extends RenderLivingEntity {
+export declare class RenderPlayer extends RenderLivingEntity {
 	model: ModelPlayer; // ModelPlayer
 	capeMesh: Mesh;
 	hatMesh: Mesh;

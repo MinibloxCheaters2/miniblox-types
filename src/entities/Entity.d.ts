@@ -1,14 +1,14 @@
 import type { Box3, Vector3 } from "three";
+import type { Block } from "../blocks/Block";
 import type { EnumFacing } from "../math/facing";
 import type { RenderPlayer } from "../render";
 import type { DataWatcher, Profile } from "../undefined";
-import type World from "../world";
+import type { World } from "../world";
 import type { BlockState } from "../world";
 import type { BlockPos } from "../world/blockpos";
-import type { Block } from "../world/blocks";
 import type { DamageSource } from "../world/damageSource";
 
-declare class Entity {
+export declare class Entity {
 	static nextEntityID: number;
 	mesh: RenderPlayer;
 	id: number;

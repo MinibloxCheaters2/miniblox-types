@@ -1,7 +1,7 @@
 import type { Vector3 } from "three/src/Three.Core.js";
 import type { Axis, AxisDirection } from "./axis";
 
-declare class EnumFacing {
+export declare class EnumFacing {
 	index: number;
 	opposite: number;
 	horizontalIndex: number;

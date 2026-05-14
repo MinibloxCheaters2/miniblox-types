@@ -2,7 +2,7 @@ import type { Group, Mesh, Object3D } from "three";
 import type { Item } from "../items";
 import type { RenderEntity } from "./RenderEntity";
 
-declare class RenderLivingEntity extends RenderEntity {
+export declare class RenderLivingEntity extends RenderEntity {
 	nameTag: Group;
 	skeleton: Group;
 	torso: Object3D;
@@ -27,7 +27,7 @@ declare class RenderLivingEntity extends RenderEntity {
 	item: Item;
 	lastActiveItem: Item;
 	handMesh: Mesh;
-	handTesr: any;
+	handTesr: unknown;
 	prevCustomName: string;
 }
 

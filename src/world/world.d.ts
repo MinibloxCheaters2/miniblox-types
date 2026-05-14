@@ -3,18 +3,12 @@ import type { Block } from "../blocks";
 import type { Entity, EntityPlayer } from "../entities";
 import type { EnumDifficulty } from "../enums";
 import type { Game } from "../game";
+import type { GameScene } from "../game/gameScene";
 import type { CPacketLeaderboard } from "../packets";
 import type { BlockPos } from "./blockpos";
 import type { Chunk } from "./chunk";
 import type { IChunkProvider } from "./chunkProvider";
-import type { GameScene } from "./gameScene";
-
-export class Material {
-	readonly air: boolean;
-	isSolid(): boolean;
-	isLiquid(): boolean;
-	blocksMovement(): boolean;
-}
+import type { Material } from "./materials.js";
 
 export class BlockState {
 	getBlock(): Block;

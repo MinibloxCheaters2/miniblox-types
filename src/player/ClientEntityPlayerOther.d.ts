@@ -1,7 +1,7 @@
 import type { Vector3 } from "three";
 import type { EntityPlayer } from "../entities/EntityPlayer";
 
-declare class ClientEntityPlayerOther extends EntityPlayer {
+export declare class ClientEntityPlayerOther extends EntityPlayer {
 	otherPlayerMPPosRotationIncrements: number;
 	otherPlayerPos: Vector3;
 	otherPlayerYaw: number;

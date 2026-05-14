@@ -18,8 +18,11 @@
 	},
 	"types": "./src/index.ts",
 	"type": "module",
+	"dependencies": {
+		"@types/three": "0.158.3"
+	},
 	"devDependencies": {
-		"@types/three": "0.158.3",
+		"tsdown": "^0.22.0",
 		"typescript": "^6.0.3"
 	}
 }

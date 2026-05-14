@@ -1,6 +1,6 @@
 import type { Vector3 } from "three";
 
-declare class Explosion {
+export declare class Explosion {
 	isFlaming: boolean;
 	isSmoking: boolean;
 	/** not used anywhere, I assume it's left over from minecraft code. */

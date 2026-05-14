@@ -1,31 +1,31 @@
 import type { Vector3 } from "three";
-import type { BlockPos } from "../blockpos";
 import type { Block, BlockChest } from "../blocks";
 import type { Container, ContainerPlayer } from "../container";
-import type { Abilities, GameMode } from "../gamemode";
+import type { Abilities, GameMode } from "../game/gamemode";
+import type { Team } from "../game/team";
 import type { EnumFacing } from "../math/facing";
 import type { SPacketPlayerInput } from "../packets";
-import type { Team } from "../team";
 import type {
 	CommandBlockLogic,
 	EffectsManager,
 	FoodStats,
 	GameProfile,
 	InventoryEnderChest,
-	InventoryPlayer,
-	ItemStack,
 	Profile,
 	TileEntitySign,
 } from "../undefined";
-import type World from "../world";
+import type { InventoryPlayer } from "../inventory";
+import type { ItemStack } from "../items";
+import type { World } from "../world";
+import type { BlockPos } from "../world/blockpos";
 import type { Entity } from "./Entity";
 import type { EntityLivingBase } from "./EntityLivingBase";
 
-declare interface IInterface {
+export declare interface IInterface {
 	getGuiID(): string;
 }
 
-declare class EntityPlayer extends EntityLivingBase {
+export declare class EntityPlayer extends EntityLivingBase {
 	socketId: string | null;
 	mode: GameMode;
 	inventory: InventoryPlayer;

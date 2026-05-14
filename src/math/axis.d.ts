@@ -1,7 +1,7 @@
 import type { EnumFacing } from "./facing";
 import type { Plane } from "./plane";
 
-declare class Axis {
+export declare class Axis {
 	name: string;
 	index: number;
 	plane: Plane;
@@ -22,7 +22,7 @@ declare class Axis {
 	getPlane(): this["plane"];
 }
 
-declare class AxisDirection {
+export declare class AxisDirection {
 	static POSITIVE: AxisDirection;
 	static NEGATIVE: AxisDirection;
 
